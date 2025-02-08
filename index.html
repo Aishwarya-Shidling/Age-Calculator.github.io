@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Age Calculator</h1>
+    <label for="dob-day">Enter your Date of Birth </label><label>(From Date)</label>
+    <div class="dob-container">
+      <select id="dob-day">
+        <!-- Days from 1 to 31 -->
+      </select>
+      <select id="dob-month">
+        <!-- Months (January to December) -->
+      </select>
+      <input type="number" id="dob-year" placeholder="Year" min="1900" max="2100">
+    </div>
+    
+    <label for="to-day">Enter a Date Till Which Age Should Be Calculated</label>
+    <div class="dob-container">
+      <select id="to-day">
+        <!-- Days from 1 to 31 -->
+      </select>
+      <select id="to-month">
+        <!-- Months (January to December) -->
+      </select>
+      <input type="number" id="to-year" placeholder="Year" min="1900" max="2100">
+    </div>
+
+    <button onclick="calculateAge()">Calculate Age</button>
+    <div id="result" class="result">
+      <span id="years"></span> 
+      <span id="months"></span>
+      <span id="days"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
